@@ -1,0 +1,4 @@
+2021/07/28 16:24:00 {"callers":["D:/gocode/src/lastblog/main.go: 26 main.init.0"],"level":"Info","message":"eddycjy: go-programming-tour-book/blog-service","time":1627460640682196900}
+2021/07/28 16:24:13 {"callers":["D:/gocode/src/lastblog/main.go: 26 main.init.0"],"level":"Info","message":"eddycjy: go-programming-tour-book/blog-service","time":1627460653078741400}
+2021/07/28 16:57:12 {"callers":["D:/gocode/src/lastblog/pkg/logger/logger.go: 189 lastblog/pkg/logger.(*Logger).Infof"],"level":"Info","message":"eddycjy: go-programming-tour-book/blog-service","time":1627462632565985200}
+2021/07/28 17:18:04 {"callers":["D:/gocode/src/lastblog/pkg/logger/logger.go: 189 lastblog/pkg/logger.(*Logger).Infof"],"level":"Info","message":"eddycjy: go-programming-tour-book/blog-service","time":1627463884496375200}
