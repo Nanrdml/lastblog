@@ -49,21 +49,21 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "请求成功",
+                        "description": "成功",
                         "schema": {
-                            "type": "Object"
+                            "$ref": "#/definitions/model.ArticleSwagger"
                         }
                     },
                     "400": {
-                        "description": "请求失败",
+                        "description": "请求错误",
                         "schema": {
-                            "type": "Object"
+                            "$ref": "#/definitions/errcode.Error"
                         }
                     },
                     "500": {
-                        "description": "服务器内部错误",
+                        "description": "内部错误",
                         "schema": {
-                            "type": "Object"
+                            "$ref": "#/definitions/errcode.Error"
                         }
                     }
                 }
@@ -349,7 +349,7 @@
                     "200": {
                         "description": "成功",
                         "schema": {
-                            "$ref": "#/definitions/model.Tag"
+                            "$ref": "#/definitions/model.TagSwagger"
                         }
                     },
                     "400": {
@@ -541,6 +541,20 @@
         }
     },
     "definitions": {
+        "app.Pager": {
+            "type": "object",
+            "properties": {
+                "page": {
+                    "type": "integer"
+                },
+                "page_size": {
+                    "type": "integer"
+                },
+                "total_rows": {
+                    "type": "integer"
+                }
+            }
+        },
         "errcode.Error": {
             "type": "object",
             "properties": {
@@ -599,6 +613,21 @@
                 }
             }
         },
+        "model.ArticleSwagger": {
+            "type": "object",
+            "properties": {
+                "list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.Article"
+                    }
+                },
+                "pager": {
+                    "type": "object",
+                    "$ref": "#/definitions/app.Pager"
+                }
+            }
+        },
         "model.Tag": {
             "type": "object",
             "properties": {
@@ -628,6 +657,21 @@
                 },
                 "state": {
                     "type": "integer"
+                }
+            }
+        },
+        "model.TagSwagger": {
+            "type": "object",
+            "properties": {
+                "list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.Tag"
+                    }
+                },
+                "pager": {
+                    "type": "object",
+                    "$ref": "#/definitions/app.Pager"
                 }
             }
         }

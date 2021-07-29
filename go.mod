@@ -9,7 +9,10 @@ require (
 	github.com/go-openapi/jsonreference v0.19.6 // indirect
 	github.com/go-openapi/spec v0.20.3 // indirect
 	github.com/go-openapi/swag v0.19.15 // indirect
-	github.com/go-playground/validator/v10 v10.8.0 // indirect
+	github.com/go-playground/locales v0.13.0
+	github.com/go-playground/universal-translator v0.17.0
+	github.com/go-playground/validator v9.31.0+incompatible
+	github.com/go-playground/validator/v10 v10.8.0
 	github.com/go-programming-tour-book/blog-service v0.0.0-20200719042655-e337d72c5bc0
 	github.com/jinzhu/gorm v1.9.16
 	github.com/kr/pty v1.1.5 // indirect
